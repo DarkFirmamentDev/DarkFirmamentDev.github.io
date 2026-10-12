@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Firmament</title>
+    <meta name="description" content="Dark Firmament makes mobile apps that keep your data on your phone.">
+    <style>
+        :root {
+            --bg: #07111D;
+            --surface: #0E1A2B;
+            --line: #1B2D48;
+            --text: #E6EDF5;
+            --muted: #9FB0C4;
+            --accent: #B5D4F4;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        main { max-width: 860px; margin: 0 auto; padding: 64px 16px 32px; }
+        h1 { font-size: 2.4rem; margin: 0 0 8px; letter-spacing: -0.5px; }
+        .intro { color: var(--muted); font-size: 1.1rem; margin: 0 0 48px; max-width: 620px; }
+        h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin: 0 0 16px; }
+        .apps { display: grid; gap: 16px; }
+        .app {
+            display: flex; gap: 20px; align-items: flex-start;
+            background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 20px;
+        }
+        .app img { width: 72px; height: 72px; border-radius: 16px; flex-shrink: 0; }
+        .app h3 { margin: 0; font-size: 1.25rem; }
+        .app .kind { margin: 0 0 8px; color: var(--muted); font-size: 0.95rem; }
+        .app p { margin: 0 0 12px; }
+        .links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 0.95rem; }
+        .status { color: var(--muted); }
+        a { color: var(--accent); }
+        .principles { margin: 48px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+        .principles li { border-left: 3px solid var(--line); padding-left: 14px; color: var(--muted); }
+        .principles strong { color: var(--text); }
+        footer {
+            max-width: 860px; margin: 0 auto; padding: 24px 16px 48px;
+            border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem;
+            display: flex; flex-wrap: wrap; gap: 8px 20px;
+        }
+        @media (max-width: 520px) {
+            main { padding-top: 40px; }
+            h1 { font-size: 2rem; }
+            .app { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Dark Firmament</h1>
+        <p class="intro">Mobile apps for everyday tasks. Your data stays on your phone, and there are no accounts to create.</p>
+
+        <h2>Our apps</h2>
+        <div class="apps">
+            <section class="app">
+                <img src="images/cadence.png" alt="Cadence icon">
+                <div>
+                    <h3>Cadence</h3>
+                    <p class="kind">Shift work calendar</p>
+                    <p>Set up your rotation in a minute and see every shift months ahead. Cadence tracks hours and pay with night and holiday premiums, knows the public holidays of nine countries, and has home screen widgets and shift reminders.</p>
+                    <div class="links">
+                        <span class="status">Coming soon to Google Play</span>
+                        <a href="privacy/cadence/">Privacy policy</a>
+                    </div>
+                </div>
+            </section>
+            <section class="app">
+                <img src="images/pocket-budgeter.png" alt="Pocket Budgeter icon">
+                <div>
+                    <h3>Pocket Budgeter</h3>
+                    <p class="kind">Budget and expense tracker</p>
+                    <p>Track spending across cash, bank and card accounts. Set monthly limits per category, add recurring payments once and keep a shopping basket within a limit before you pay.</p>
+                    <div class="links">
+                        <span class="status">Coming soon to Google Play</span>
+                        <a href="privacy/">Privacy policy</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <ul class="principles">
+            <li><strong>On your phone.</strong> Our apps have no servers of their own. What you enter is stored on your device.</li>
+            <li><strong>Free with ads.</strong> The apps are free and show ads from Google AdMob.</li>
+            <li><strong>Seven languages.</strong> English, German, French, Italian, Spanish, Japanese and Turkish.</li>
+        </ul>
+    </main>
+    <footer>
+        <a href="about/">About</a>
+        <a href="terms/">Terms of Use</a>
+        <a href="mailto:darkfirmamentdev@gmail.com">darkfirmamentdev@gmail.com</a>
+        <span>&copy; 2026 Dark Firmament</span>
+    </footer>
+</body>
+</html>
